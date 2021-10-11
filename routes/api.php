@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CommandeController;
 use App\Http\Controllers\CouponsController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -18,3 +19,4 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/clients/{id}/coupons', [CouponsController::class,'controleCoupon']);
+Route::get("/commandes/{id}/livraison",[CommandeController::class,'creationCommande']);

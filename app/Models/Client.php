@@ -27,4 +27,9 @@ class Client extends Model
     public function ville(){
         return $this->belongsTo(Ville::class);
     }
+
+    public function commandes(){
+        return $this->hasMany(Commande::class);
+    }
+
 }
